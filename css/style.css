@@ -1,0 +1,134 @@
+/* Deixa todos os elementos com o mesmo tipo de medida */
+* {
+  box-sizing: border-box;
+}
+
+/* Estilo geral da página */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #000000;
+}
+
+/* ----- Cabeçalho (barra cinza de cima) ----- */
+.cabecalho {
+  background-color: #d9d9d9;
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cabecalho h2 {
+  margin: 0;
+}
+
+/* Links do menu */
+.cabecalho a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.cabecalho a:hover {
+  text-decoration: underline;
+}
+
+/* ----- Conteúdo da página ----- */
+.conteudo {
+  padding: 30px 40px;
+}
+
+.conteudo h3 {
+  margin-bottom: 40px;
+}
+
+/* ----- Formulários ----- */
+form {
+  width: 300px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+input,
+select {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 30px;
+  padding: 0 8px;
+  border: 1px solid #000000;
+}
+
+button {
+  background-color: #d9d9d9;
+  border: none;
+  height: 36px;
+  width: 120px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #bbbbbb;
+}
+
+/* ----- Cards dos eventos ----- */
+.lista-eventos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: #d9d9d9;
+  width: 260px;
+  padding: 15px;
+}
+
+.card p {
+  margin: 0 0 10px 0;
+  font-size: 12px;
+}
+
+/* Botões Editar e Excluir dentro do card */
+.card button,
+.card a {
+  background-color: #8a8a8a;
+  color: #ffffff;
+  width: 80px;
+  height: 26px;
+  font-size: 12px;
+  margin-right: 8px;
+  display: inline-block;
+  text-align: center;
+  line-height: 26px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ----- Mensagens de aviso ----- */
+.mensagem {
+  margin-top: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.mensagem.sucesso {
+  color: #1f6b3a;
+}
+
+.mensagem.erro {
+  color: #a32020;
+}
+
+.mensagem a {
+  color: #000000;
+}

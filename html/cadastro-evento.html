@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de evento</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho com o menu -->
+  <header class="cabecalho">
+    <h2>Gerenciador de eventos</h2>
+    <nav>
+      <a href="cadastro-palestrante.html">Cadastro de palestrantes</a>
+      <a href="cadastro-evento.html">Cadastro de evento</a>
+      <a href="index.html">Gerenciador de evento</a>
+    </nav>
+  </header>
+
+  <main class="conteudo">
+    <h3 id="titulo-formulario">Cadastro de evento</h3>
+
+    <form id="form-evento">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome">
+
+      <label for="descricao">Descrição</label>
+      <input type="text" id="descricao">
+
+      <label for="local">Local</label>
+      <input type="text" id="local">
+
+      <label for="data">Data e hora</label>
+      <input type="datetime-local" id="data">
+
+      <label for="palestrante">Palestrante</label>
+      <select id="palestrante"></select>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+  </main>
+
+  <script src="../javascript/cadastro-evento.js"></script>
+</body>
+</html>

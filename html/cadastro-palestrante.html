@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de palestrante</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho com o menu -->
+  <header class="cabecalho">
+    <h2>Gerenciador de eventos</h2>
+    <nav>
+      <a href="cadastro-palestrante.html">Cadastro de palestrantes</a>
+      <a href="cadastro-evento.html">Cadastro de evento</a>
+      <a href="index.html">Gerenciador de evento</a>
+    </nav>
+  </header>
+
+  <main class="conteudo">
+    <h3>Cadastro palestrante</h3>
+
+    <form id="form-palestrante">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome">
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email">
+
+      <button type="submit">Cadastrar</button>
+    </form>
+  </main>
+
+  <script src="../javascript/palestrante.js"></script>
+</body>
+</html>
